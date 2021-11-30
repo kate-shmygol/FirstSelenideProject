@@ -16,8 +16,8 @@ public class LoginPage {
 		open("https://contacts-app.tobbymarshall815.vercel.app/login");
 	}
 
-	public void with(String email, String password) {
-		$(emailLokator).val(email);
+	public void with(String email, String password) { // method for filling fields
+		$(emailLokator).val(email); // method 'val' fills fields
 		$(passwordLokator).val(password);
 		$(loginButtonLokator).click();
 	}

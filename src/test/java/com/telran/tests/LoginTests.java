@@ -6,17 +6,17 @@ import org.junit.Test;
 
 public class LoginTests {
 
-	LoginPage login; // declared
+	LoginPage login; // declared class 'LoginPage', connected LoginTests' with 'LoginPage'
 
 	@Before
 
 	public void setUp() {
-		login = new LoginPage(); // initialized
+		login = new LoginPage(); // initialized class 'LoginPage'
 	}
 
 	@Test
 	public void loginPositiveTest() {
-		login.with("krooos@gm.com", "Krooos12345~");
+		login.with("krooos@gm.com", "Krooos12345~"); // in every test refer to class 'LoginPage'
 		login.validLogin();
 	}
 
